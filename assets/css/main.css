@@ -1898,13 +1898,32 @@
 	}
 
 /* Button */
+    
+    .icon-description span,
+    .icon-description li,
+    .icon-description.button {
+        box-shadow: none;
+        list-style: none;
+        color: transparent;
+        transition: all .7s;
+    }
+    .icon-description:hover span,
+    .icon-description:hover li,
+    .icon-description:hover button, 
+    .icon-description:hover h4{
+        box-shadow: #1ebdd1;
+        cursor: pointer;
+        color: black;
+    }
+    .icon-description:hover {
+        cursor: pointer;
+    }
     .icon img {
         height: 90px;
         transition: all 1s;
     }
     .icon img:hover {
         cursor: pointer;
-        height: 70px;
     }
 	input[type="submit"],
 	input[type="reset"],
@@ -2010,7 +2029,7 @@
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.9);
 		color: #1ebdd1;
 	}
 
@@ -2454,9 +2473,6 @@
 	}
 
 /* Image */
-    .image:hover {
-
-    }
 
 	.image {
 		border: 0;
@@ -3348,11 +3364,11 @@
 
 
 	.banner .image {
-		background-color: rgba(0, 0, 0, 0.125);
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 
 	.banner.invert .image {
-		background-color: rgba(255, 255, 255, 0.125);
+		background-color: rgba(255, 255, 255, 0.8);
 	}
 
 
@@ -3955,11 +3971,11 @@
 
 
 	.spotlight .image {
-		background-color: rgba(0, 0, 0, 0.125);
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 
 	.spotlight.invert .image {
-		background-color: rgba(255, 255, 255, 0.125);
+		background-color: rgba(255, 255, 255, 0.8);
 	}
 
 	
@@ -4686,7 +4702,8 @@
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background-color: rgba(0, 0, 0, 0.5);
+                background-color: rgba(0, 0, 15, 0.85);
+                text-align: center;
 				opacity: 0;
 				padding: 3rem;
 				z-index: 1;
