@@ -1898,7 +1898,14 @@
 	}
 
 /* Button */
-
+    .icon img {
+        height: 90px;
+        transition: all 1s;
+    }
+    .icon img:hover {
+        cursor: pointer;
+        height: 70px;
+    }
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -2404,7 +2411,7 @@
 		}
 
 		.icon > .label {
-            display: none;
+			display: none;
 		}
 
 		.icon.style2:before {
@@ -3341,11 +3348,11 @@
 
 
 	.banner .image {
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: rgba(0, 0, 0, 0.125);
 	}
 
 	.banner.invert .image {
-		background-color: rgba(255, 255, 255, 0.9);
+		background-color: rgba(255, 255, 255, 0.125);
 	}
 
 
@@ -3948,11 +3955,11 @@
 
 
 	.spotlight .image {
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: rgba(0, 0, 0, 0.125);
 	}
 
 	.spotlight.invert .image {
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: rgba(255, 255, 255, 0.125);
 	}
 
 	
@@ -4595,7 +4602,7 @@
 
 		.gallery.style2 > .forward {
 			right: 0;
-			background-image: linear-gradient(to left, rgba(0, 0, 0, 0.9) 15%, transparent);
+			background-image: linear-gradient(to left, rgba(0, 0, 0, 0.25) 15%, transparent);
 		}
 
 			.gallery.style2 > .forward:before {
@@ -4605,7 +4612,7 @@
 
 		.gallery.style2 > .backward {
 			left: 0;
-			background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 15%, transparent);
+			background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25) 15%, transparent);
 		}
 
 			.gallery.style2 > .backward:before {
@@ -4679,12 +4686,11 @@
 				left: 0;
 				width: 100%;
 				height: 100%;
-                background-color: rgba(0, 0, 40, 0.9);
-                text-align: center;
+				background-color: rgba(0, 0, 0, 0.5);
 				opacity: 0;
 				padding: 3rem;
 				z-index: 1;
-				font-size: 1rem;
+				font-size: 0.8rem;
 			}
 
 				.caption a {
@@ -5120,31 +5126,6 @@
 	}
 
 /* Items (transitions) */
-    .icon-description span,
-    .icon-description li,
-    .icon-description.button {
-        box-shadow: none;
-        list-style: none;
-        color: transparent;
-        transition: all 1s;
-    }
-    .icon-description:hover span,
-    .icon-description:hover li,
-    .icon-description:hover button, 
-    .icon-description:hover h4{
-        box-shadow: #1ebdd1;
-        cursor: pointer;
-        color: black;
-
-    }
-    .icon-description:hover {
-        cursor: pointer;
-    }
-    .icon img {
-        height: 90px;
-        transition: all 1s;
-    }
-    
 
 	.items.onload-fade-in > * > .inner {
 		-moz-transition: opacity 0.75s ease-in-out;
