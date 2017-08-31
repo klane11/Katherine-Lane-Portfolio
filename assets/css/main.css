@@ -1898,14 +1898,7 @@
 	}
 
 /* Button */
-    .icon img {
-        height: 90px;
-        transition: all 1s;
-    }
-    .icon img:hover {
-        cursor: pointer;
-        height: 70px;
-    }
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -5126,6 +5119,31 @@
 	}
 
 /* Items (transitions) */
+    .icon-description span,
+    .icon-description li,
+    .icon-description.button {
+        box-shadow: none;
+        list-style: none;
+        color: transparent;
+        transition: all 1s;
+    }
+    .icon-description:hover span,
+    .icon-description:hover li,
+    .icon-description:hover button, 
+    .icon-description:hover h4{
+        box-shadow: #1ebdd1;
+        cursor: pointer;
+        color: black;
+
+    }
+    .icon-description:hover {
+        cursor: pointer;
+    }
+    .icon img {
+        height: 90px;
+        transition: all 1s;
+    }
+    
 
 	.items.onload-fade-in > * > .inner {
 		-moz-transition: opacity 0.75s ease-in-out;
