@@ -2404,7 +2404,7 @@
 		}
 
 		.icon > .label {
-			display: none;
+            display: none;
 		}
 
 		.icon.style2:before {
