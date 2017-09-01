@@ -48,6 +48,7 @@
 		-webkit-text-size-adjust: none;
 	}
 
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -2105,12 +2106,11 @@
 	form {
 		margin: 0 0 2rem 0;
 	}
-
+        #Field4,
 		form .field {
 			margin: 0 0 1.5rem 0;
 			clear: both;
 		}
-
 			form .field.half {
 				clear: none;
 				width: 50%;
@@ -2132,14 +2132,14 @@
 				form .field.third.first {
 					padding: 0 0.75rem 0 0;
 				}
-
+        
 		form > .actions {
 			clear: both;
 			margin: 1.875rem 0 0 0;
 		}
 
 		@media screen and (max-width: 736px) {
-
+            #Field4,
 			form .field {
 				margin: 0 0 1.125rem 0;
 			}
@@ -2181,7 +2181,7 @@
 				}
 
 		}
-
+    #title1,
 	label {
 		display: block;
 		font-size: 0.9rem;
@@ -2196,7 +2196,8 @@
 	input[type="search"],
 	input[type="url"],
 	select,
-	textarea {
+    textarea,
+    #title1 {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -2360,9 +2361,16 @@
 	}
 
 	label {
-		color: #000000;
-	}
+        color: #000000;
+        color: #1ebdd1
+    }
 
+    #wufoo-z1ynmi4b1v5oyvr {
+        padding-top: 30px;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
@@ -2388,29 +2396,6 @@
 
 	.select-wrapper:before {
 		color: rgba(0, 0, 0, 0.2);
-	}
-
-	input[type="checkbox"] + label,
-	input[type="radio"] + label {
-		color: #000000;
-	}
-
-		input[type="checkbox"] + label:before,
-		input[type="radio"] + label:before {
-			border-color: rgba(0, 0, 0, 0.2);
-		}
-
-	input[type="checkbox"]:checked + label:before,
-	input[type="radio"]:checked + label:before {
-		background-color: #000000;
-		border-color: #000000;
-		color: #ffffff;
-	}
-
-	input[type="checkbox"]:focus + label:before,
-	input[type="radio"]:focus + label:before {
-		border-color: #47D3E5;
-		box-shadow: 0 0 0 1px #47D3E5;
 	}
 
 	::-webkit-input-placeholder {
@@ -4724,7 +4709,7 @@
 				left: 0;
 				width: 100%;
 				height: 100%;
-                background-color: rgba(0, 0, 15, 0.85);
+                background-color: rgba(0, 0, 0, 0.9);
                 text-align: center;
 				opacity: 0;
 				padding: 3rem;
@@ -4739,10 +4724,15 @@
 					pointer-events: auto;
 				}
 
-				.caption h2, .caption h3, .caption h4, .caption h5, .caption h6 {
-					font-size: 1.25rem;
+				.caption h2, .caption h3, .caption h4, .caption h5, .caption h6  {
+					font-size: 1.45rem;
 					margin-bottom: 0.25rem;
-				}
+                }
+                .caption p {
+                    font-size: 1rem;
+                    color: white;
+                    font-weight: bold;
+                }
 
 				.caption > * {
 					max-width: 100%;
