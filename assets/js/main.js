@@ -3,21 +3,28 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+// email.js for contact form at bottom of Portfolio
+
 var myform = $("form#myform");
-myform.submit(function(event) {
-  event.preventDefault();
+myform.submit(function(event){
+	event.preventDefault();
+
+	var params = myform.serializeArray().reduce(function(obj, item) {
+     obj[item.name] = item.value;
+     return obj;
+  }, {});
+
   // Change to your service ID, or keep using the default service
   var service_id = "katherinelane11_gmail_com";
   var template_id = "template_w57ODyKy";
-
   myform.find("button").text("Sending...");
-  emailjs.sendForm(service_id, template_id, "myform")
-    .then(function() {
-      alert("Sent!");
-      myform.find("button").text("Send");
-    }, function(err) {
-      alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-      myform.find("button").text("Send");
+  emailjs.send(service_id,template_id,params)
+  	.then(function(){ 
+       alert("Sent!");
+       myform.find("button").text("Send");
+     }, function(err) {
+       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+       myform.find("button").text("Send");
     });
   return false;
 });

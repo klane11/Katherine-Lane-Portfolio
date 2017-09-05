@@ -11,6 +11,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <!-- email.js script -->
+
 	</head>
 	<body>
 
@@ -25,8 +27,9 @@
                             <li><a href="#first" class="button big wide smooth-scroll-middle">About Me</a></li>
                         </ul>
                     </div>
-                    <div class="image onload-image-fade-in onload-content-fade-right">
-                        <img src="images/denverphoto.jpg" alt="" />
+                    <div class="image onload-image-fade-in onload-content-fade-right img-absolute">
+                        <img src="images/images/Iowacorn.jpg" alt="sunshine over Iowa corn"/>
+                        <span class="pic-description">I chose this photo as I'm originally from Iowa and my father is a corn and bean farmer</span>
                     </div>
                 </section>
 
@@ -39,7 +42,7 @@
                         <li><a target="_blank"
                             rel="noopener noreferrer" href="https://github.com/MaeDae11" class="icon style2 fa-github icon-fixed"><span class="label">GitHub</span></a></li>
                         <li><a target="_blank"
-                            rel="noopener noreferrer" href="https://indd.adobe.com/view/b417cd33-b2c4-4dd8-92fd-e7302a6f1968" class="icon style2 fa-file icon-fixed"><span class="label">Resume</span></a></li>
+                            rel="noopener noreferrer" href="images/images/Katherine Lane Resume - Full Stack Engineer.pdf" class="icon style2 fa-file icon-fixed"><span class="label">Resume</span></a></li>
                     </ul>
                 </div>
             <!-- Two -->
@@ -299,15 +302,15 @@
                         <form method="post" id="myform">
                             <div class="field half first">
                                 <label for="name">Name</label>
-                                <input type="text" name="name" id="name" value="" maxlength="50"/>
+                                <input type="text" name="from_name" id="name" value="" maxlength="50"/>
                             </div>
                             <div class="field half">
                                 <label for="email">Email</label>
-                                <input type="email" name="email" id="email" value="" maxlength="50" required/>
+                                <input type="text" name="email" id="email" value="" maxlength="50" required/>
                             </div>
                             <div class="field">
                                 <label for="message">Message</label>
-                                <textarea name="message" id="message" rows="6" maxlength="200" placeholder="Please write a breif message. I'm excited to hear from you!" ></textarea>
+                                <textarea name="message_html" id="message" rows="6" maxlength="200" placeholder="Please write a breif message. I'm excited to hear from you!" ></textarea>
                             </div>
                             <button>Send</button>
                         </form>
@@ -329,7 +332,7 @@
                             <li><a target="_blank"
                                 rel="noopener noreferrer" href="https://github.com/MaeDae11" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
                             <li><a target="_blank"
-                                rel="noopener noreferrer" href="https://indd.adobe.com/view/b417cd33-b2c4-4dd8-92fd-e7302a6f1968" class="icon style2 fa-file"><span class="label">Resume</span></a></li>
+                                rel="noopener noreferrer" href="images/images/Katherine Lane Resume - Full Stack Engineer.pdf" class="icon style2 fa-file"><span class="label">Resume</span></a></li>
                         </ul>
                         <p>&copy; 2017 Katherine Lane   |   Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
                     </div>
@@ -344,7 +347,6 @@
           (function() {
             emailjs.init("user_PNf3TpxCdogFFC6XzxMUG");
           })();
-        
         </script>
         <script src="assets/js/jquery.scrollex.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>

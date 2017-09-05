@@ -1896,8 +1896,19 @@
 
 	.box {
 		border-color: rgba(0, 0, 0, 0.2);
-	}
-
+    }
+    .img-absolute {
+        position: relative;
+    }
+    .pic-description {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: white;
+        width: 400px;
+        text-align: right;
+        margin-right: 20px;
+    }
 /* Button */    
     .fixed-icons {
         display: flex;
