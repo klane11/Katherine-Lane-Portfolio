@@ -2585,7 +2585,9 @@
 		ul.icons {
 			cursor: default;
 			list-style: none;
-			padding-left: 0;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
 		}
 
 			ul.icons li {
