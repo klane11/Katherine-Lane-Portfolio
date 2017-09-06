@@ -2589,7 +2589,7 @@
 		}
 
 			ul.icons li {
-				display: inline-block;
+				display: flex;
 				padding: 0 0.75rem 0 0;
 			}
 
@@ -4723,7 +4723,7 @@
                 background-color: rgba(0, 0, 0, 0.9);
                 text-align: center;
 				opacity: 0;
-				padding: 3rem;
+				padding: 1rem;
 				z-index: 1;
 				font-size: 0.8rem;
 			}
@@ -4761,7 +4761,7 @@
 		@media screen and (max-width: 980px) {
 
 			.caption {
-				padding: 2rem;
+				padding: 1rem;
 			}
 
 		}
