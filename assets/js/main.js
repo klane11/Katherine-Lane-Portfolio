@@ -1,20 +1,12 @@
-/*
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-// email.js for contact form at bottom of Portfolio
 
+// email.js for contact form at bottom of Portfolio
 var myform = $("form#myform");
 myform.submit(function(event){
 	event.preventDefault();
-
 	var params = myform.serializeArray().reduce(function(obj, item) {
      obj[item.name] = item.value;
      return obj;
   }, {});
-
-  // Change to your service ID, or keep using the default service
   var service_id = "katherinelane11_gmail_com";
   var template_id = "template_w57ODyKy";
   myform.find("button").text("Sending...");
@@ -141,8 +133,8 @@ myform.submit(function(event){
 		// Wrapper.
 			$wrapper.children()
 				.scrollex({
-					top:		'30vh',
-					bottom:		'30vh',
+					top:		'0vh',
+					bottom:		'0vh',
 					initialize:	function() {
 						$(this).addClass('is-inactive');
 					},
@@ -165,8 +157,8 @@ myform.submit(function(event){
 		// Items.
 			$('.items')
 				.scrollex({
-					top:		'30vh',
-					bottom:		'30vh',
+					top:		'0vh',
+					bottom:		'0vh',
 					delay:		50,
 					initialize:	function() {
 						$(this).addClass('is-inactive');
@@ -194,8 +186,8 @@ myform.submit(function(event){
 				.wrapInner('<div class="inner"></div>')
 				.prepend(skel.vars.mobile ? '' : '<div class="forward"></div><div class="backward"></div>')
 				.scrollex({
-					top:		'30vh',
-					bottom:		'30vh',
+					top:		'0vh',
+					bottom:		'0vh',
 					delay:		50,
 					initialize:	function() {
 						$(this).addClass('is-inactive');
