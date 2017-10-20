@@ -355,24 +355,29 @@
     /* Button */    
     .fixed-icons {
         display: flex;
-        flex-direction: column;
         position: fixed;
+        flex-direction: row;
         right: 0;
-        top: 35%;
+        top: 0;
+        margin-top: 5px;
+        margin-right: 5px;
         border: none;
         box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.0) !important;
         z-index: 50;
     }
     .fixed-icons-list {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         list-style-type: none;
         border: none;
         box-shadow: none;
     }
+    .icon-fixed {
+        background-color:rgba(255, 255, 255, 0.8)!important;
+    }
     .icon-fixed:before {
         color: white;
-        box-shadow: inset 10px 10px 10px 30px rgba(0, 0, 0, .5) !important;
+        background-color:rgba(0, 0, 0, .5);
         margin: 5px;
     }
 
