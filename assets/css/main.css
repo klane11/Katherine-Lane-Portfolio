@@ -523,27 +523,12 @@
                     padding: 0 0.75rem 0 0;
                 }
 
-            form .field.third {
-                clear: none;
-                width: 33.33333%;
-                float: left;
-                padding: 0 0 0 0.75rem;
-            }
-
-                form .field.third.first {
-                    padding: 0 0.75rem 0 0;
-                }
-        
         form > .actions {
             clear: both;
             margin: 1.875rem 0 0 0;
         }
 
         @media screen and (max-width: 736px) {
-            #Field4,
-            form .field {
-                margin: 0 0 1.125rem 0;
-            }
 
                 form .field.half {
                     padding: 0 0 0 0.5625rem;
